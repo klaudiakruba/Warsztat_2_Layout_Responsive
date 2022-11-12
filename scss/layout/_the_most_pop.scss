@@ -1,0 +1,85 @@
+@import '../settings/colors';
+
+/*** THE MOST POPULAR SALES PLATFORM IN COUNTRY SECTION ***/
+/*THIRD SECTION*/
+
+.third-section {
+  padding: 10rem 0 12.1rem 0;
+}
+
+.third-header {
+  text-align: center;
+  padding-bottom: 10rem;
+  line-height: 4.2rem;
+}
+
+.third-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18.4rem;
+}
+
+.third-section-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-section-num {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.6rem;
+  font-weight: 800;
+  padding-top: 1.4rem;
+  padding-bottom: 1.905rem;
+}
+
+.third-section-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: $color-light-grey;
+  flex-wrap: wrap;
+  max-width: 13rem;
+  text-align: center;
+}
+
+.circle-box {
+  position: relative;
+  border-radius: 50%;
+  width: 6.3rem;
+  height: 6.3rem;
+  background: $color-primary;
+}
+
+.third-section-box:first-child .circle-box {
+  background: $color-redish;
+}
+
+.third-section-box:last-child .circle-box {
+  background: $color-green;
+}
+
+.third-section-img {
+  position: absolute;
+}
+
+.third-section-box:nth-child(1) .third-section-img {
+  top: 0.6rem;
+  left: 3.3rem;
+  bottom: 1.4rem;
+}
+
+.third-section-box:nth-child(2) .third-section-img {
+  top: 1.2rem;
+  left: 1.9rem;
+}
+
+.third-section-box:nth-child(3) .third-section-img {
+  top: 0.6rem;
+  left: 3rem;
+  bottom: 1.4rem;
+}
+

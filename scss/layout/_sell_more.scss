@@ -1,0 +1,49 @@
+@import '../settings/colors';
+
+/*** SELL MORE SECTION ***/
+/*SECOND SECTION*/
+
+.second-section {
+  text-align: center;
+}
+
+.second-header {
+  font-size: 4.9rem;
+  padding: 13rem 0 2rem 0;
+  line-height: 5.7rem;
+}
+
+.second-section-content {
+  line-height: 2.2rem;
+}
+
+.content-text {
+  font-size: 1.6rem;
+  padding-bottom: 6rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-primary;
+  padding: 2.2rem 15.7rem 2.3rem 15.7rem;
+  box-shadow: 0.5rem 1rem 1.4rem $color-primary-shadow;
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  color: $color-black;
+}
+
+.first-section-btn {
+  border-radius: 4rem;
+  line-height: 2.2rem;
+}
+
+.photo-img {
+  width: 100%;
+  background-position: center bottom;
+  padding-top: 1.5rem;
+}
