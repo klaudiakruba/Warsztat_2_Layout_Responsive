@@ -1,49 +1,100 @@
 @import '../settings/colors';
+@import '../components/buttons';
 
-/*** SELL MORE SECTION ***/
-/*SECOND SECTION*/
 
 .second-section {
   text-align: center;
+  width: 100vw;
+
+  .second-header {
+    font-size: 3.5rem;
+    padding: 10rem 0 2rem 0;
+    line-height: 4.1rem;
+    @include md {
+      font-size: 4.9rem;
+      padding: 13rem 0 2rem 0;
+      line-height: 5.7rem;
+    }
+  }
+
+  .second-section-content {
+    line-height: 2.2rem;
+  }
+
+  .content-text {
+    font-size: 1.6rem;
+    padding-bottom: 2.8rem;
+    margin: 0 3.6rem 0 3.6rem;
+    line-height: 2.2rem;
+    @include md {
+      padding-bottom: 6rem;
+    }
+  }
+
+  .btn {
+    padding: 2.2rem 8rem 2.3rem 8rem;
+    margin-bottom: 5.1rem;
+    min-width: 160px;
+    @include md {
+      padding: 2.2rem 15.7rem 2.3rem 15.7rem;
+      margin-bottom: -0.5rem;
+    }
+  }
+
+  .photo-img {
+    display: flex;
+    justify-content: center;
+    zoom: 150%;
+    @include md {
+      zoom: 100%;
+      width: 100vw;
+      padding-top: 1.5rem;
+    }
+
+    img {
+      width: 100vw;
+      background-position: center bottom;
+    }
+  }
 }
 
-.second-header {
-  font-size: 4.9rem;
-  padding: 13rem 0 2rem 0;
-  line-height: 5.7rem;
-}
 
-.second-section-content {
-  line-height: 2.2rem;
-}
-
-.content-text {
-  font-size: 1.6rem;
-  padding-bottom: 6rem;
-}
-
-.btn {
-  text-decoration: none;
-  color: $color-white;
-  background-color: $color-primary;
-  padding: 2.2rem 15.7rem 2.3rem 15.7rem;
-  box-shadow: 0.5rem 1rem 1.4rem $color-primary-shadow;
-  font-weight: 700;
-  font-size: 1.6rem;
-  display: inline-block;
-}
-
-.btn:hover {
-  color: $color-black;
-}
-
-.first-section-btn {
-  border-radius: 4rem;
-  line-height: 2.2rem;
-}
-
-.photo-img {
-  width: 100%;
-  background-position: center bottom;
-  padding-top: 1.5rem;
-}
+///*** SELL MORE SECTION ***/
+///*SECOND SECTION*/
+//
+//.second-section {
+//  text-align: center;
+//
+//  .second-header {
+//    font-size: 4.9rem;
+//    padding: 13rem 0 2rem 0;
+//    line-height: 5.7rem;
+//  }
+//
+//  .second-section-content {
+//    line-height: 2.2rem;
+//  }
+//
+//  .content-text {
+//    font-size: 1.6rem;
+//    padding-bottom: 6rem;
+//  }
+//
+//
+//  .btn:hover {
+//    color: $color-black;
+//  }
+//
+//  .first-section-btn {
+//    border-radius: 4rem;
+//    line-height: 2.2rem;
+//  }
+//
+//  .photo-img {
+//    width: 100%;
+//    background-position: center bottom;
+//    padding-top: 1.5rem;
+//  }
+//
+//}
+//

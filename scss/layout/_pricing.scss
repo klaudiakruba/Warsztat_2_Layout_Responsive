@@ -1,137 +1,183 @@
 @import '../settings/colors';
-/*** PRICING ***/
+@import '../components/buttons';
 
-.pricing-container .headers {
-  text-align: center;
-  padding: 10rem 0 5rem 0;
-}
-
-.pricing-tabs {
-  gap: 5.9rem;
+.pricing-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.pricing-tabs-box {
-  height: 46.1rem;
-  width: 37.2rem;
-  border-radius: 1.8rem;
-  text-align: center;
-  padding-top: 3.4rem;
-  position: relative;
+.headers {
+  padding: 6rem 0 1.4rem 0;
+}
+.pricing-tabs {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:  center;
+  gap: 5.4rem;
+}
+.pricing-tabs-box {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 4.6rem;
+
+
+  .button-container {
+    padding: 1.6rem 5.7rem;
+
+    &:nth-child(1) {
+      border: 1px solid $color-redish;
+    }
+
+    &:nth-child(2) {
+      border: 1px solid $color-primary;
+      height: 50rem;
+      width: 40.5rem;
+      box-shadow: 0.5rem 1rem 2.7rem $color-primary-shadow;
+    }
+    &:nth-child(3) {
+      border: 1px solid $color-green;
+    }
+
+  }
 }
 
-.pricing-tabs-box:nth-child(1) {
-  border: 1px solid $color-redish;
-}
 
-.pricing-tabs-box:nth-child(2) {
-  border: 1px solid $color-primary;
-  height: 50rem;
-  width: 40.5rem;
-  box-shadow: 0.5rem 1rem 2.7rem $color-primary-shadow;
-}
-
-.pricing-tabs-box:nth-child(3) {
-  border: 1px solid $color-green;
-}
-
-.headers-pricing {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  padding-bottom: 1.4rem;
-}
-
-.pricing-box-price {
-  font-size: 4.6rem;
-  line-height: 7rem;
-  font-weight: 300;
-
-}
-
-.pricing-tabs-box:nth-child(1) .pricing-box-price {
-  color: $color-redish;
-}
-
-.pricing-tabs-box:nth-child(2) .pricing-box-price {
-  color: $color-primary;
-}
-
-.pricing-tabs-box:nth-child(3) .pricing-box-price {
-  color: $color-green;
-}
-
-.text-box-price {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6rem;
-  padding-top: 0.5rem;
-}
-
-.pricing-list-text {
-  padding-bottom: 2rem;
-  font-size: 1.4rem;
-}
-
-.pricing-tabs-box:nth-child(2) .pricing-list-text {
-  padding-bottom: 2.6rem;
-}
-
-.pricing-tabs-box:nth-child(1) .pricing-list {
-  padding-top: 6.9rem;
-}
-
-.pricing-tabs-box:nth-child(2) .pricing-list {
-  padding-top: 6.1rem;
-}
-
-.pricing-tabs-box:nth-child(3) .pricing-list {
-  padding-top: 5rem;
-}
-
-.pricing-list-text::before {
-  content: "";
-  width: 1.1rem;
-  height: 1.1rem;
-  display: inline-block;
-  margin-right: 1rem;
-  background-image: url("../assets/Ckechmark-1.svg");
-}
-
-.x-pricing-list-text::before {
-  content: "";
-  width: 1.1rem;
-  height: 1.1rem;
-  display: inline-block;
-  margin-right: 1rem;
-  background-image: url("../assets/Close.svg");
-}
-
-.pricing-btn {
-  position: absolute;
-  border-radius: 2.3rem;
-  padding: 1.6rem 5.7rem;
-  font-size: 1.3rem;
-  bottom: -2.5rem;
-}
-
-.pricing-tabs-box:nth-child(1) .pricing-btn {
-  background-color: $color-redish;
-}
-
-.pricing-tabs-box:nth-child(2) .pricing-btn {
-  background-color: $color-primary;
-  padding: 1.6rem 6.4rem;
-  box-shadow: 0.5rem 1rem 1.4rem $color-primary-shadow;
-}
-
-.pricing-tabs-box:nth-child(3) .pricing-btn {
-  background-color: $color-green;
-}
+///*** PRICING ***/
+//
+//.pricing-container .headers {
+//  text-align: center;
+//  padding: 10rem 0 5rem 0;
+//}
+//
+//.pricing-tabs {
+//  gap: 5.9rem;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+//
+//.pricing-tabs-box {
+//  height: 46.1rem;
+//  width: 37.2rem;
+//  border-radius: 1.8rem;
+//  text-align: center;
+//  padding-top: 3.4rem;
+//  position: relative;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  align-items: center;
+//}
+//
+//.pricing-tabs-box:nth-child(1) {
+//  border: 1px solid $color-redish;
+//}
+//
+//.pricing-tabs-box:nth-child(2) {
+//  border: 1px solid $color-primary;
+//  height: 50rem;
+//  width: 40.5rem;
+//  box-shadow: 0.5rem 1rem 2.7rem $color-primary-shadow;
+//}
+//
+//.pricing-tabs-box:nth-child(3) {
+//  border: 1px solid $color-green;
+//}
+//
+//.headers-pricing {
+//  font-family: 'Raleway', sans-serif;
+//  font-size: 2.1rem;
+//  font-weight: 700;
+//  padding-bottom: 1.4rem;
+//}
+//
+//.pricing-box-price {
+//  font-size: 4.6rem;
+//  line-height: 7rem;
+//  font-weight: 300;
+//
+//}
+//
+//.pricing-tabs-box:nth-child(1) .pricing-box-price {
+//  color: $color-redish;
+//}
+//
+//.pricing-tabs-box:nth-child(2) .pricing-box-price {
+//  color: $color-primary;
+//}
+//
+//.pricing-tabs-box:nth-child(3) .pricing-box-price {
+//  color: $color-green;
+//}
+//
+//.text-box-price {
+//  font-family: 'Raleway', sans-serif;
+//  font-size: 1.2rem;
+//  font-weight: 700;
+//  line-height: 1.6rem;
+//  padding-top: 0.5rem;
+//}
+//
+//.pricing-list-text {
+//  padding-bottom: 2rem;
+//  font-size: 1.4rem;
+//}
+//
+//.pricing-tabs-box:nth-child(2) .pricing-list-text {
+//  padding-bottom: 2.6rem;
+//}
+//
+//.pricing-tabs-box:nth-child(1) .pricing-list {
+//  padding-top: 6.9rem;
+//}
+//
+//.pricing-tabs-box:nth-child(2) .pricing-list {
+//  padding-top: 6.1rem;
+//}
+//
+//.pricing-tabs-box:nth-child(3) .pricing-list {
+//  padding-top: 5rem;
+//}
+//
+//.pricing-list-text::before {
+//  content: "";
+//  width: 1.1rem;
+//  height: 1.1rem;
+//  display: inline-block;
+//  margin-right: 1rem;
+//  background-image: url("../assets/Ckechmark-1.svg");
+//}
+//
+//.x-pricing-list-text::before {
+//  content: "";
+//  width: 1.1rem;
+//  height: 1.1rem;
+//  display: inline-block;
+//  margin-right: 1rem;
+//  background-image: url("../assets/Close.svg");
+//}
+//
+//.pricing-btn {
+//  position: absolute;
+//  border-radius: 2.3rem;
+//  padding: 1.6rem 5.7rem;
+//  font-size: 1.3rem;
+//  bottom: -2.5rem;
+//}
+//
+//.pricing-tabs-box:nth-child(1) .pricing-btn {
+//  background-color: $color-redish;
+//}
+//
+//.pricing-tabs-box:nth-child(2) .pricing-btn {
+//  background-color: $color-primary;
+//  padding: 1.6rem 6.4rem;
+//  box-shadow: 0.5rem 1rem 1.4rem $color-primary-shadow;
+//}
+//
+//.pricing-tabs-box:nth-child(3) .pricing-btn {
+//  background-color: $color-green;
+//}

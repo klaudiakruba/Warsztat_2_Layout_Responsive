@@ -1,0 +1,11 @@
+.btn {
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-primary;
+  //padding: 2.2rem 15.7rem 2.3rem 15.7rem;
+  box-shadow: 0.5rem 1rem 1.4rem $color-primary-shadow;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 4rem;
+  display: inline-block;
+}

@@ -1,60 +1,137 @@
 @import '../settings/colors';
+@import '../layout/page';
+@import '../abstracts/mixins';
 
-/* HEADER SECTION */
 
 .first-section {
-  width: 100%;
+  height: 7rem;
+  display: flex;
   box-shadow: 0 0.3rem 0.6rem $color-secondary-shadow;
-  display: flex;
-  align-items: center;
+
+  .first-section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 3rem 1.6rem 2.5rem;
+  }
+
 }
 
-.container {
-  width: 100%;
-}
 
-.first-section-header.container {
-  padding: 1.9rem 13.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.headers {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3.6rem;
-}
-
-.logo {
+.logo.headers {
   color: $color-primary;
   font-size: 3.2rem;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   line-height: 3.7rem;
+  text-align: center;
+  padding: 0;
+
 }
+
 
 .header-menu {
   display: flex;
-  gap: 9.5rem;
+  flex-direction: column;
+  gap: 1.4rem;
   word-spacing: 0.328rem;
   text-transform: uppercase;
   border: transparent;
   letter-spacing: 0.1875rem;
+
+  @include md {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 
-.nav-link {
-  color: $color-light-grey;
-  font-weight: 700;
-  border-bottom: 0.4rem solid transparent;
-  text-transform: uppercase;
-  padding: 2.8rem 1.8rem 2.75rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+.nav-element {
+  min-width: 3rem;
+
+  a {
+    padding-left: 0;
+  }
+
+  .nav-link {
+    color: $color-light-grey;
+    font-weight: 700;
+    border-bottom: 0.4rem solid transparent;
+    text-transform: uppercase;
+    padding-bottom: 1.4rem;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+
+    &:hover {
+      color: $color-black;
+    }
+
+    @include md {
+      padding: 2.8rem 1.8rem 2.75rem;
+      &:hover {
+        color: $color-black;
+        border-bottom: 0.4rem solid $color-primary;
+      }
+    }
+  }
 }
 
-.nav-link:hover {
-  color: $color-black;
-  border-bottom: 0.4rem solid $color-primary;
-}
+
+////MOBILE
+//
+//.first-section {
+//  width: 100vw;
+//  box-shadow: 0 0.3rem 0.6rem $color-secondary-shadow;
+//  display: flex;
+//  align-items: center;
+//}
+//
+//.container {
+//  width: 100%;
+//}
+//
+//.first-section-header.container {
+//  padding: 1.9rem 13.6rem;
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//}
+//
+//.logo {
+//  color: $color-primary;
+//  font-size: 3.2rem;
+//  font-weight: 300;
+//  font-family: 'Raleway', sans-serif;
+//  text-decoration: none;
+//  line-height: 3.7rem;
+//}
+//
+//.header-menu {
+//  display: flex;
+//  gap: 9.5rem;
+//  word-spacing: 0.328rem;
+//  text-transform: uppercase;
+//  border: transparent;
+//  letter-spacing: 0.1875rem;
+//
+//  .nav-link {
+//    color: $color-light-grey;
+//    font-weight: 700;
+//    border-bottom: 0.4rem solid transparent;
+//    text-transform: uppercase;
+//    padding: 2.8rem 1.8rem 2.75rem;
+//    text-decoration: none;
+//    font-size: 1.1rem;
+//    line-height: 1.5rem;
+//
+//    &:hover {
+//      color: $color-black;
+//      border-bottom: 0.4rem solid $color-primary;
+//    }
+//  }
+//}
+//
+//
