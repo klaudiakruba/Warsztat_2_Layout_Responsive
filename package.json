@@ -1,24 +1,24 @@
 {
-  "name": "warsztat_1_sass_rwd",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "source": "index.html",
-  "scripts": {
-    "start": "parcel --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adwestfa/Warsztat_1_Sass_RWD.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/adwestfa/Warsztat_1_Sass_RWD/issues"
-  },
-  "homepage": "https://github.com/adwestfa/Warsztat_1_Sass_RWD#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0"
-  }
+	"name": "warsztat_1_sass_rwd",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"source": "index.html",
+	"scripts": {
+		"start": "parcel --open",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adwestfa/Warsztat_1_Sass_RWD.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/adwestfa/Warsztat_1_Sass_RWD/issues"
+	},
+	"homepage": "https://github.com/adwestfa/Warsztat_1_Sass_RWD#readme",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.6.0"
+	}
 }
